@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<!-- <changeSet id="1" author="amit">
+		<addColumn schemaName="liquibase" tableName="customer">
+			<column name="branch" type="varchar(255)" />
+		</addColumn>
+	</changeSet> -->
+	<changeSet id="4" author="AmitKumar">
+		<sql>
+			CREATE TABLE books (
+			id INT AUTO_INCREMENT PRIMARY KEY,
+			title VARCHAR(255) NOT NULL,
+			author VARCHAR(255) NOT NULL
+			
+			);
+		</sql>
+	</changeSet>
+	
+	<!-- <changeSet id="3" author="AmitKumar">
+		<sql>
+			DROP TABLE liquibase.books;
+		</sql>
+	</changeSet> -->
+	
+</databaseChangeLog>
