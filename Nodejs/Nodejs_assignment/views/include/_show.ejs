@@ -1,0 +1,21 @@
+<% for(var i=0;i<student.length;i++){ %>
+<tr>
+    <td><%= i+1 %></td>
+    <td><%= student[i].rollno %></td>
+    <td><%= student[i].name %></td>
+    <td><%= student[i].dateofbirth %></td>
+    <td><%= student[i].marks %></td>
+    <td>
+        <a href="/update-student?id=<%= student[i]._id %>" class="btn boarder-shadow update">
+            <span class="text-gradient">
+                <i class="fas fa-pencil-alt"></i>
+            </span>
+        </a>
+        <a  class="btn boarder-shadow delete" data-id="<%= student[i]._id %>">
+            <span class="text-gradient">
+                <i class="fas fa-times"></i>
+            </span>
+        </a>
+    </td>
+</tr>
+<% } %>

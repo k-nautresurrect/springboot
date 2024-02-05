@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Entertrainment"
+    },
+    {
+      "id": 2,
+      "name": "Food and Drinks"
+    },
+    {
+      "id": 3,
+      "name": "Health and Fitness "
+    },
+    {
+      "id": 4,
+      "name": "Travel"
+    },
+    {
+      "id": 5,
+      "name": "Peronal"
+    },
+    {
+      "id": 6,
+      "name": "Music"
+    },
+    {
+      "id": 7,
+      "name": "Sports"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Jack",
+      "body": "I am a disco dancer",
+      "userId": 1,
+      "date": "2023-09-11T10:13:29.571Z",
+      "reactions": {
+        "thumbsUp": 6,
+        "dislike": 2
+      },
+      "id": 12
+    },
+    {
+      "title": "Himachal Pradesh",
+      "body": "Awesome place, Nice weather.",
+      "userId": 4,
+      "date": "2023-09-12T06:51:25.164Z",
+      "reactions": {
+        "thumbsUp": 2,
+        "dislike": 2
+      },
+      "id": 13
+    }
+  ]
+}

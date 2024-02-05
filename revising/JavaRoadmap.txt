@@ -1,0 +1,78 @@
+Core Java Concepts:
+
+Java Basics (syntax, variables, data types)
+Object-Oriented Programming (OOP) Concepts (classes, objects, inheritance, polymorphism, encapsulation, abstraction)
+Exception Handling
+File I/O
+Generics
+Collections Framework
+Java Advanced Concepts:
+
+Threads and Concurrency
+Reflection
+Serialization
+Annotations
+Lambda Expressions
+Functional Interfaces
+Streams API
+Data Structures:
+
+Arrays
+Linked Lists
+Stacks and Queues
+Trees and Binary Trees
+Graphs
+Hashing
+Algorithms:
+
+Sorting Algorithms (Bubble Sort, Selection Sort, Merge Sort, Quick Sort)
+Searching Algorithms (Binary Search, Linear Search)
+Recursion
+Dynamic Programming
+Big-O Notation
+Design Patterns:
+
+Creational Patterns (Singleton, Factory, Abstract Factory, Builder)
+Structural Patterns (Adapter, Decorator, Proxy)
+Behavioral Patterns (Observer, Strategy, Command)
+Database and SQL:
+
+JDBC (Java Database Connectivity)
+SQL basics (SELECT, INSERT, UPDATE, DELETE)
+Normalization and Denormalization
+Transactions
+Spring Framework:
+
+IoC (Inversion of Control)
+Dependency Injection
+Spring Boot
+Spring MVC
+Spring Data JPA
+Hibernate:
+
+Object-Relational Mapping (ORM)
+Hibernate Configuration
+Hibernate Annotations
+HQL (Hibernate Query Language)
+Web Technologies:
+
+Servlets and JSP
+RESTful Web Services
+JSON and XML Processing
+Testing:
+
+JUnit
+TestNG
+Mockito (for mocking)
+Build Tools and Dependency Management:
+
+Maven
+Gradle
+Miscellaneous:
+
+Garbage Collection
+Java Memory Management
+Java Virtual Machine (JVM)
+Interview Problem Solving:
+
+Practice coding problems on platforms like LeetCode, HackerRank, or CodeSignal.

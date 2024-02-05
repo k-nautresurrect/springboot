@@ -1,0 +1,25 @@
+@EntityScan(basePackages = {"org.nagarro.samplelib"})
+@EnableJpaRepositories(basePackages = {"org.nagarro.samplelib"})
+//@ComponentScan(basePackages = { "org.nagarro.samplelib"})
+
+//HIBERNATE TABLE GENERATION
+
+<createTable tableName="hibernate_sequence">
+
+            <column name="next_val" type="BIGINT"/>
+
+        </createTable>
+
+    </changeSet>
+ 
+<changeSet id="insert_sequence_data" author="your_author">
+
+        <insert tableName="hibernate_sequence">
+
+            <column name="next_val" valueNumeric="1"/>
+
+        </insert>
+
+    </changeSet>
+<changeSet id="create_sequence_table" author="your_author">
+

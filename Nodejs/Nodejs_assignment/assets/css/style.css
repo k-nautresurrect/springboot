@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+:root {
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-shadow {
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.boxx{
+    justify-content: right;
+    display: flex;
+}
+
+.indexx {
+    margin: auto;
+
+    width: 60%;
+    border: 3px solid #9b8f0c;
+    padding: 10px;
+
+    display: flex;
+    border-radius: 10px
+}
+
+.outerbox {
+    margin-left: 70px;
+    display: flex;
+}
+
+.box {
+    padding: 5px;
+    margin-right: 100px;
+    /* margin-left: 5px; */
+}
+
+.outer {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    border: 5px solid green;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, rgb(135, 240, 135), rgb(36, 223, 230))
+        /* background-color: rgb(135, 240, 135);*/
+
+}
+
+.indexbutton {
+    background-color: cadetblue;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border: 3px solid #4c90af;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.indexbutton:hover {
+    background-color: #adb5bd;
+    /* Green */
+    color: white;
+}
+
+/* background-color: #06d6a0;
+  color: #fff;
+  border:none;
+  padding: 15px;
+
+  border-radius:10px;
+  box-shadow: 0px 0px 2px 2px rgb(123, 236, 74); */
+
+
+#header nav {
+    background-color: #06d6a0;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main {
+    margin-top: 6em;
+    font-family: 'Barlow', sans-serif;
+}
+
+#site-main .container .box-nav>a {
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+#site-main .container form {
+    margin: 2em 0;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td,
+.table th {
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td>a.btn {
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover {
+    background-color: #06d6a0;
+}
+
+.table tr:hover td>a {
+    box-shadow: none;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: var(--dark);
+    border-color: #32383e;
+}
+
+/* student form */
+
+.form-title {
+    margin-top: 2em;
+}
+
+.form-title>h2 {
+    padding: .5em 0;
+}
+
+.new_student {
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_student .form-group,
+#add_student .form-group {
+    margin: .4em 0;
+}
+
+#result_student .form-group input[type="text"],
+#update_student .form-group input[type="text"],
+#add_student .form-group input[type="text"] {
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_student .form-group .radio,
+#add_student .form-group .radio {
+    margin: 1em 2em;
+}
+
+#update_student .form-group .btn,
+#result_student .form-group .btn,
+#add_student .form-group .btn {
+    width: 100%;
+    padding: .9em 1em;
+    background-color: #16db93;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_student .form-group .btn:hover,
+#result_student .form-group .btn.btn:hover,
+#add_student .form-group .btn:hover {
+    background-color: var(--dark);
+    color: var(--border);
+}

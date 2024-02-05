@@ -1,0 +1,23 @@
+                                          Component Description
+
+AWS Account: An AWS account is a container for your AWS resources. You create and manage your AWS resources in an AWS account, and the AWS account provides administrative capabilities for access and billing.
+
+
+Virtual Private Cloud (VPC): With Amazon Virtual Private Cloud (Amazon VPC), you can launch AWS resources in a logically isolated virtual network that you've defined. This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
+
+
+Subnet 1 (Public): A public subnet with a range of 16 IPs (10.0.0.0/24). This subnet allows inbound and outbound internet traffic.
+
+Subnet 2 (Private): A private subnet with a range of 16 IPs (10.0.16.0/24). This subnet restricts inbound internet traffic.
+
+
+EC2 Instance:  Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud.Deliver secure, reliable, high-performance, and cost-effective compute infrastructure to meet demanding business needs.
+
+RDS Database: Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+
+Elastic Beanstalk: AWS Elastic Beanstalk is used to deploy the application code in an auto-scaling and managed environment.
+
+Lambda: AWS Lambda is an Amazon serverless computing system that runs code and automatically manages the underlying computing resources. It is an event-driven compute service.A serverless function triggered by file uploads to the S3 bucket. It prints the name of the uploaded file.
+
+S3 Bucket: Amazon S3 bucket used for file storage and triggering the Lambda function upon file upload.Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
+

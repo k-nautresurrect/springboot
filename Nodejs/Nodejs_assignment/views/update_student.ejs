@@ -1,0 +1,50 @@
+<%- include('include/_header')%>
+
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+           <a href="/teacherview">All Student<i class="fa-solid fa-users"></i></a>
+        </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Student</h2>
+
+        </div>
+        <form method="POST" id="update_student">
+            <div class="new_student">
+                <div class="form-group">
+                    <label for="name" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="<%= student._id %>">
+                    <input type="text" name="name" value="<%= student.name %>" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="rollno" class="text-light">Roll no</label>
+                    
+                    <input type="number" name="rollno" value="<%= student.rollno %>" placeholder="Enter Roll No.">
+                </div>
+                <div class="form-group">
+                    <label for="dateofbirth" class="text-light">Date of birth</label>
+                    
+                    <input type="text" name="dateofbirth" value="<%= student.dateofbirth %>" placeholder="DDMMYYYY">
+                </div>
+                <div class="form-group">
+                    <label for="marks" class="text-light">Marks</label>
+                    
+                    <input type="number" name="marks" value="<%= student.marks %>" placeholder="Enter marks">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+            </div>
+            
+        
+          
+        </form>
+    </div>
+
+</main>
+
+
+<%- include('include/_footer')%>
