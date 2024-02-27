@@ -1,0 +1,11 @@
+git config --global user.name "Amit Kumar"
+git config --global user.email "Kumaramit640690@gmail.com"
+git init
+git add .
+git commit -m "myFirstCommit"
+git branch -M main
+git remote add origin git@github.com:reponame/MyGiHubWorkspace.git
+ssh-keygen -t ed25519 -C "kumaramit640690@gmail.com"(for private repo do this extra step)
+now the key generated copy the key path and run
+cat key path
+git push -u origin main
