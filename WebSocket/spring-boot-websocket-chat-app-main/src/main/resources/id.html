@@ -1,0 +1,27 @@
+const ws = new SockJS("http://localhost:8080/ws");
+const stomp = Stomp.over(ws);
+stomp.subscribe("/log")
+
+
+ws.onopen = () => {
+  console.log("opened");
+}
+const logOutput = document.getElementById('log-output');
+ws.onopen = function(e) {
+  console.log("listnening");
+}
+ws.onmessage = function(event) {
+    const newLines = event.data.split('\n');
+    newLines.forEach(line => {
+        const p = document.createElement('p');
+        p.textContent = line;
+        logOutput.appendChild(p);
+    });
+    // Remove old lines if exceeding a certain limit to prevent the page from growing infinitely
+    const maxLines = 1000;
+    while (logOutput.childNodes.length > maxLines) {
+        logOutput.removeChild(logOutput.firstChild);
+    }
+    // Scroll to the bottom to always show the latest lines
+    logOutput.scrollTop = logOutput.scrollHeight;
+};
